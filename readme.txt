@@ -59,7 +59,7 @@ arithmetic operations, functions and processes:
 
  (05) Functions:       abs, avg, ceil, clamp, equal, erf, erfc,  exp,
                        expm1, floor, frac,  log, log10, log1p,  log2,
-                       logn,  max,  min,  mul,  ncdf,  nequal,  root,
+                       logn,  max,  min,  mul,  ncdf,  not_equal,  root,
                        round, roundn, sgn, sqrt, sum, swap, trunc
 
  (06) Trigonometry:    acos, acosh, asin, asinh, atan, atanh,  atan2,
@@ -321,7 +321,7 @@ of C++ compilers:
 +----------+---------------------------------------------------------+
 | ncdf     | Normal cumulative distribution function.  (eg: ncdf(x)) |
 +----------+---------------------------------------------------------+
-| nequal   | Not-equal test between x and y using normalised epsilon |
+| not_equal| Not-equal test between x and y using normalised epsilon |
 +----------+---------------------------------------------------------+
 | pow      | x to the power of y.  (eg: pow(x,y) == x ^ y)           |
 +----------+---------------------------------------------------------+
@@ -4310,7 +4310,7 @@ into account when using ExprTk:
       of that  symbol-table, otherwise  the result  will be undefined
       behavior.
 
- (10) Equal  and  Nequal  are  normalised-epsilon  equality routines,
+ (10) Equal  and  Not_equal  are  normalised-epsilon  equality routines,
       which use epsilons of 0.0000000001 and 0.000001 for double  and
       float types respectively.
 
